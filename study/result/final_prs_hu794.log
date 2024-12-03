@@ -1,0 +1,23 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --bfile plink_output
+  --out final_prs_hu794
+  --score combined_score_hu794.txt 2 4 6 sum
+
+Hostname: c8af1d714e3f
+Working directory: /content
+Start time: Mon Dec  2 02:42:27 2024
+
+Random number seed: 1733107347
+12978 MB RAM detected; reserving 6489 MB for main workspace.
+613904 variants loaded from .bim file.
+1 person (0 males, 1 female) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... done.
+613904 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--score: 50664 valid predictors loaded.
+--score: Results written to final_prs_hu794.profile .
+
+End time: Mon Dec  2 02:42:28 2024
