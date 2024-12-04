@@ -33,9 +33,46 @@ PRS 함수는 표준 정규분포 (평균 0, 표준편차 1) 을 따르는 확�
 
 
 
+# 추가 탐구
+#### ADHD RISK SNP 관련 논문 서치
+Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder, ADHD Group of PGC, et al, 2019-1, Nature Genetics
 
+Transcriptome-wide association study of attention deficit hyperactivity disorder identifies associated genes and phenotypes, Liao, et al, 2019, Nature Communication
 
+등의 논문에서 찾은 Allele 목록은 다음과 같다.
 
+[search_string.txt](study/extra_study/search_strings.txt)
+
+#### 원본 genome.txt 파일에서 찾기
+[실행파일](study/extra_study/search_snp.py)
+
+#### 결과
+```
+rsid chromosome position genotype
+rs11210892 1 44100084 AG
+```
+rs11210892 Allele은 G>A 인데 genotype 이 A/G인것으로 보아 Heterozygous로 보인다.
+
+여러 논문에서 해당 Allele이 위치한 유전자는 DLPFC(dorsolateral prefrontal cortex, 전전두피질)에 관계된 유전자라고 말하고 있다.
+
+```
+FMRI data showed that the risk allele “G” of rs11210892 was associated with an increased activation
+within the right dorsolateral prefrontal cortex(Sample III) and the bilateral striatum (Sample IV).
+We conclude that rs11210892 is significantly associated with working memory and its neural underpinnings,
+so the genes near this SNP might be potential gene targets for treating cognitive impairment associated with schizophrenia.
+(Effects of Trans-ancestry Schizophrenia Risk Gene Polymorphisms on Working Memory and Underlying Brain Mechanisms, Yanyan Su, et al, 2021, Schizophrenia Bulletin)
+```
+```
+Among the 23 SNP loci of ADHD children, no mutation was detected in 6 loci, and 2 loci did not conform to Hardy-Weinberg equilibrium.
+Of the remaining 15 loci, there were 9 SNPs, rs2652511 (SLC6A3 locus), rs1410739 (OBI1-AS1 locus), rs3768046 (TIE1 locus),
+rs223508 (MANBA locus), rs2906457 (ST3GAL3 locus), rs4916723 (LINC00461 locus), rs9677504 (SPAG16 locus), rs1427829 (intron) and rs11210892 (intron),
+correlated with the severity of clinical symptoms of ADHD.
+Specifically, rs1410739 (OBI1-AS1 locus) was found to simultaneously affect conduct problems,
+control ability and abstract thinking ability of children with ADHD.
+(Correlation research of susceptibility single nucleotide polymorphisms and the severity of clinical symptoms in attention deficit hyperactivity disorder, Xu, et al, 2022, Front. Psychiatry)
+```
+#### 결론
+ADHD는 전두엽의 도파민 등의 부족으로 추정되는 문제가 야기시킨 실행기능 부족으로인해 주의력부족, 충동조절 어려움 등을 호소하는 뇌신경발달장애이다. 따라서, 한개의 SNP 결과만으로 결론내기는 어렵겠지만, 전전두피질과 관련된 유전자의 변이의 발견과 ADHD 발병의 상관관계를 생각해볼 수는 있겠다.
 
 
 
